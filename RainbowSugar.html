@@ -378,8 +378,8 @@ var S = {
     if (i !== -1) {
       S.UI.simulate(decodeURI(action).substring(i + 3));
     } else {
-      // 倒计时修改这句中的数字，不需要倒计时删除“|#countdown 3|”，换内容修改文字
-      S.UI.simulate('|#countdown 3||王飘女士|2023❤|新年快乐|期待未来与你的|每一次相遇|以及彼此的|守候与包容|爱你的老吴❤|');
+      // if you donot want clock, just delete “|#countdown 3|”
+      S.UI.simulate('|#countdown 3||here|is|the|place|to|show|your|words|');
     }
 
     S.Drawing.loop(function () {
